@@ -1,5 +1,28 @@
-#topBorder
-{
-    border: 5px  
-    color purple;
+body{
+    background-color:dimgrey
+}
+
+#webBackground{
+    background-color:blanchedalmond
+}
+
+#outerBorder{
+    border: 10px solid blue;
+    padding: 5px
+}
+
+#innerBorder{
+    border: 5px solid purple;
+}
+
+#innerBorderText{
+    color: red;
+}
+
+#myBiography{
+    border: 5px solid green;
+}
+
+.extraCredit{
+    border: 5px solid red;
 }
