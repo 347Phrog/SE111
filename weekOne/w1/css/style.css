@@ -26,3 +26,7 @@ body{
 .extraCredit{
     border: 5px solid red;
 }
+
+#balBackground{
+    border: 10px solid black;
+}
