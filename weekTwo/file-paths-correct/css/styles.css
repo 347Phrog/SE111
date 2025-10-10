@@ -1,0 +1,31 @@
+html {
+    background-color: blanchedalmond;
+  }
+  
+#header {
+    text-align: center;
+}
+  
+#headerHiddenText {
+    color: transparent;
+}
+  
+#header:hover #headerHiddenText {
+    color: black;
+}
+  
+#luckyText {
+        color: transparent;
+}
+
+#luckyText:hover{
+    color:black
+}
+
+
+#headerHiddenText, #luckyText {
+    transition: color 0.3s ease;
+}
+
+
+  
