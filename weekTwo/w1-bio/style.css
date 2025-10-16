@@ -1,12 +1,84 @@
-#header{
+/* Header */
+#header {
     text-align: center;
-}
-
-#bio{
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation area */
+  #nav {
     text-align: center;
-}
-
-#haiti{
-    width: 200;
-    height: 200;
-}
+    margin-bottom: 20px;
+  }
+  
+  /* Individual navigation links (using IDs instead of #nav a) */
+  #bioLink,
+  #schoolingLink,
+  #hobbiesLink,
+  #footerLink {
+    text-decoration: none;    /* removes underline */
+    color: black;             /* base color */
+    margin: 0 10px;           /* spacing between links */
+    font-weight: bold;
+  }
+  
+  /* Hover effect for each navigation link */
+  #bioLink:hover,
+  #schoolingLink:hover,
+  #hobbiesLink:hover,
+  #footerLink:hover {
+    color: blue;              /* color when mouse hovers */
+  }
+  
+  /* Section headings */
+  #bio,
+  #schooling,
+  #hobbies {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Bio image centered */
+  #haiti {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  
+  /* Schooling and hobbies images */
+  #pPhoto,
+  #leetcode,
+  #book,
+  #manga {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+  }
+  
+  /* Paragraphs */
+  p {
+    text-align: left;
+    margin: 0 100px;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+  }
+  
+  /* Footer section */
+  #footer {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer link and hover effect */
+  #footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #footer a:hover {
+    color: blue;
+  }
+  

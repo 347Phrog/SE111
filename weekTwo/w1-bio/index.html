@@ -2,37 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "Jonathan Joseph Bio">
-    <meta name = "author" content ="Jonathan Joseph">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jonathan Joseph Bio">
+    <meta name="author" content="Jonathan Joseph">
     <link rel="stylesheet" href="style.css">
     <title>Week 2 | Jonathan Joseph Bio</title>
 </head>
 
 <body>
-    <h1 id = "header">Jonathan Joseph - About Me</h1>
-    <div id ="nav">
-        <li><a href="#bio"></a>T</li>
-        <li><a href="#schooling">E</a></li>
-        <li><a href="hobbies"></a>S</li>
-        <li><a href="footer"></a>T</li>
+    <h1 id="header">Jonathan Joseph - About Me</h1>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <a id="bioLink" href="#bio">Bio</a>
+        <a id="schoolingLink" href="#schooling">Schooling</a>
+        <a id="hobbiesLink" href="#hobbies">Hobbies</a>
+        <a id="footerLink" href="#footer">Footer</a>
     </div>
-        <h2>Bio</h2>
-        <img id="Haiti" src="./images/haiti.jpg" alt ="image of Haiti" width="200">
-        <p>Hello, whoever is reading this. As you can tell, my name is Jonathan Joseph. 
-            When I was 2 years old, there was an earthquake in Haiti that drastically changed the trajectory of my life, since my mother planned for me to grow up there. 
-            Following the earthquake, my mother sent me to America, where I have spent most of my life, except for two trips I went to Haiti.
-            I am currently 17 years old and taking classes at New England Institute of Technology through the ECP. So far, it has been a fantastic decision. 
-            I've met new people, and the freedom we are given is really lovely, and so is the food. But my true goal with the ECP is to get a jumpstart on college and my career, if 
-            I can get a summer internship, which would be open to a "freshman". </p>
-        <hr>
-        <h2>Schooling</h2>
 
-        <hr>
-        <h2>Hobbies</h2>
-    <br>
+    <!-- ================= BIO SECTION ================= -->
+    <!-- Bio Section -->
+    <h2 id="bio">Bio</h2>
+    <img id="haiti" src="./images/haiti.jpg" alt="Image of Haiti" width="300">
+    <p>Hello, whoever is reading this. As you can tell, my name is <strong>Jonathan Joseph</strong>. 
+        When I was <b>2 years old</b>, there was an earthquake in <i>Haiti</i> that drastically changed the trajectory of my life, 
+        since my mother planned for me to grow up there. Following the earthquake, my mother sent me to America, 
+        where I have spent most of my life, except for two trips I went to Haiti.
+        I am currently 17 years old and taking classes at <em>New England Institute of Technology</em> through the ECP.
+        Visit my school here: 
+        <a href="https://www.neit.edu" target="_blank">New England Institute of Technology</a>.
+    </p>
 
+    <hr>
+
+    <!-- ================= SCHOOLING SECTION ================= -->
+    <!-- Schooling Section -->
+    <h2 id="schooling">Schooling</h2>
+    <ol>
+        <li>
+            For <b>all</b> of my schooling I have gone to the same K–12 school, <strong>Times2 STEM Academy</strong>.
+            <img src="./images/t2.png" alt="Times2 STEM Academy logo" width="200">
+        </li>
+        <li>
+            I have done different summer school programs; the first I ever did, during my rising 6th grade summer, 
+            was <i>Generation STEAM Teach Academy</i> (GTSA). It was a program for K–8 students and I really enjoyed it.
+            <img src="./images/GTSA.png" alt="GTSA Program" width="200">
+        </li>
+        <li>
+            I have participated with <em>Brown Pre-College</em>. It was fun, but the coursework was intense.  
+            I chose a class on the rule of law because I thought I wanted to practice law, but that course helped me realize 
+            I don’t want to do that much reading constantly, even though I still enjoy reading.  
+            <img src="./images/bPC.png" alt="Brown Pre-College" width="200">
+        </li>
+    </ol>
+
+    <hr>
+
+    <!-- ================= HOBBIES SECTION ================= -->
+    <!-- Hobbies Section -->
+    <h2 id="hobbies">Hobbies</h2>
+    <ul>
+        <li>
+            My favorite hobby is <strong>skateboarding</strong>. I started last year after my sister got me my first board.  
+            It was scary at first since skateboards don’t have brakes, and I fell a few times.  
+            <img id="pPhoto" src="./images/pilsnerPhoto.jpg" alt="My first skateboard (Pilsner collection)" width="300">
+        </li>
+        <li>
+            I also like to practice coding problems on <em>LeetCode</em>.  
+            I don’t always keep up with my daily goal, but I enjoy thinking through each challenge.  
+            <img id="leetcode" src="./images/leetStats.png" alt="My LeetCode stats" width="300">
+        </li>
+        <li>
+            I enjoy reading. My favorite book is <i>Forgive Me Leonard Peacock</i> by Matthew Quick.  
+            <img id="book" src="./images/fMLP.jpg" alt="Forgive Me Leonard Peacock book cover" width="300">
+        </li>
+        <li>
+            I also read manga, and my current favorite is <strong>Centuria</strong>.  
+            <img id="manga" src="./images/centuria.jpg" alt="Centuria manga cover" width="300">
+        </li>
+    </ul>
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <div id="footer">
+        <a href="#header">Back to Top</a><br>
+        <img src="./images/validation.png" alt="HTML Validation Screenshot" width="2000">
+    </div>
 </body>
-
-
 </html>
