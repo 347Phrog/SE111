@@ -1,7 +1,7 @@
-html {
+#homePage{
     background-color: blanchedalmond;
   }
-  
+ 
 #header {
     text-align: center;
 }
@@ -12,20 +12,47 @@ html {
   
 #header:hover #headerHiddenText {
     color: black;
+    transition: color 1s ease;
 }
   
 #luckyText {
-        color: transparent;
+    color: transparent;
+    transition: color 1s ease;
 }
 
-#luckyText:hover{
-    color:black
-}
-
-
-#headerHiddenText, #luckyText {
-    transition: color 0.3s ease;
+#lucky:hover + #luckyText {
+    color: black;
 }
 
 
+#tText{
+    color: transparent;
+    transition: color 1s ease;
+}
+
+#mrT:hover + #tText{
+    color: black
+}
+
+#charactersPage{
+    background-color: beige;
+} 
+
+
+.monsterText {
+    color: transparent;
+    transition: color 1s ease;
+  }
   
+  .monster:hover .monsterText {
+    color: black;
+  }
+
+  .personText{
+    color: transparent;
+    transition: color 1s ease;
+  }
+
+  .person:hover .personText{
+    color: black;
+  }

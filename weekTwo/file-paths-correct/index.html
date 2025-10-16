@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Week 2 | Home</title>
 </head>
-<body>
+<body id ="homePage">
     <!--INSTRUCTIONS-->
     <!--
         Using relative paths, change the URLs or URIs in the index and characters pages project to allow the images and links to load correctly.
@@ -27,18 +27,22 @@
         <nav>
             <!--link to the index and characters pages-->
             <!--In addition, use a fragment to link to the footer of the Character's page-->
-            <a href="./index.html">HOME</a> | <a href="./webPages/characters.html">CHARACTERS</a> | <a href="./webPages/characters.html" id="footer-link">CHARACTERS FOOTER</a>
+            <a href="./index.html">HOME</a> | <a href="./webPages/characters.html">CHARACTERS</a> | <a href="./webPages/characters.html#footer" ">CHARACTERS FOOTER</a>
         </nav>
         <hr>
         <section>
             <!--link to https://www.nicepng.com/png/detail/123-1234378_lucky-charms-leprechaun-png-lucky-charms-clip-art.png-->
-            <img id="lucky" src="./images/people/luckyTheLeprechaun.png">
+            <img id="lucky" src="./images/people/luckyTheLeprechaun.png" alt="Lucky the Leprechaun">
             <p id ="luckyText">
                 The mascot of Lucky Charms, created in 1963, is Lucky the Leprechaun, also known as Sir Charms, and originally called L.C. Leprechaun.
             </p>
             <br>
              <!--link to mrt.webp-->
-            <img src="./images/people/mrt.webp" alt="Mr T" alt="Lucky the Leprechaun">
+            <img id ="mrT" src="./images/people/mrt.webp" alt="Mr T">
+            <p id = "tText">
+                Mr. T (born Laurence Tureaud; May 21, 1952) 
+                is an American actor and retired professional wrestler.
+            </p>
         </section>
         <hr>
         <footer id="footer">
@@ -46,7 +50,7 @@
             <img src="./images/main-images/neit-tiger.png" alt="NEIT Tiger Mascot">
             <br>
             <!--link to the header tag-->
-            <a href="">Back to Top</a>
+            <a href="#header">Back to Top</a>
         </footer>
     </main>
 </body>
