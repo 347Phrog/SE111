@@ -1,0 +1,16 @@
+#mainPage, #charactersPage {
+    animation: chameleon 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes chameleon {
+    from {
+      background-color: rgb(33, 85, 76);
+    }
+    to {
+      background-color: rgb(45, 12, 40);
+    }
+  }
+  
+#header{
+    text-align: center;
+}
