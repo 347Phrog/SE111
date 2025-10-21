@@ -1,0 +1,18 @@
+.border-unity{
+    text-align: center;
+    border: 2px soild black;
+}
+
+html{
+    background-color: bisque;
+}
+
+#nav-bar{
+    color: black;
+    text-decoration: none;
+}
+
+#nav-bar:hover{
+    color: black;
+    text-decoration: none;
+}
