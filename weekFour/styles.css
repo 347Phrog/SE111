@@ -59,3 +59,36 @@ html{
     width: 50px
 } 
 
+/*Review Page content----------------------------------------------------------*/
+
+@font-face {
+  font-family: "SSF2Color";
+  src: url("./fonts/super-street-fighter-ii-large-colour.colr.ttf.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tekken";
+  src: url("./fonts/tarrgetital.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+.sfText{
+  font-family: "SSF2Color", sans-serif;
+    font-size: 20px;
+}
+
+.tekkenText {
+  font-family: "Tekken", sans-serif;
+  font-size: 20px;
+}
+
+.indented{
+    margin-left: 50px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5em; /* adjust as needed */
+}
