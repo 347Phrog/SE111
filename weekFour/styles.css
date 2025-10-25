@@ -39,8 +39,38 @@ html{
     
 }
 
-.intText{
-    /* put a font here later */
+@font-face {
+  font-family: "Cinzel";
+  src: url("./fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+.intText {
+  font-family: "Cinzel", serif;
+  font-size: 15px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#intTextHeader{
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  font-weight: 100;
+  font-style: italic;
+  color: black;          /* or any color you want */
+  text-transform: none;  /* keeps normal casing */
+  text-decoration: none;
+}
+#intTextHeader:hover{
+    color:black
+}
+
+#intTexth2{
+  font-family: "Cinzel", serif;
+  font-size: 26px;
+  font-weight: 100;
+  font-style: italic;
+  
 }
 
 /*The Conjuring Last Rites content----------------------------------------------------------*/
