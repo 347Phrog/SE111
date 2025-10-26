@@ -47,8 +47,8 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
-img, iframe{
-    display:block;
+#conjImage,#intImage{
+    display: block;
 }
 /*NAVIGATION BAR----------------------------------------------------------*/
 #nav-bar {
