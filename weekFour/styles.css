@@ -47,6 +47,9 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
+img, iframe{
+    display:block;
+}
 /*NAVIGATION BAR----------------------------------------------------------*/
 #nav-bar {
   color: black;
