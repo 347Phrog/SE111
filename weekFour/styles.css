@@ -1,18 +1,61 @@
+/*Global ----------------------------------------------------------*/
+@keyframes fadeIn {
+  from 
+    { 
+    opacity: 0;  
+    transform: translateY(10px); 
+    }
+    to   
+    { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+
 .border-unity{
     text-align: center;
-    border: 2px soild black;
 }
 
 html{
     background-color: bisque;
 }
-/*NAVIGATION BAR----------------------------------------------------------*/
-#nav-bar{
-    color: black;
-    text-decoration: none;
+
+@keyframes intToconj {
+  0% {
+    font-family: "Cinzel", serif;
+    opacity: 1;
+  }
+  49% {
+    opacity: 0; /* fade out before switch */
+  }
+  50% {
+    font-family: "Cormorant Garamond", serif;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1; /* fade back in */
+  }
 }
-.link-btn{
-    color:black;
+
+#hPLUS {
+  animation: intToconj 3s infinite;
+}
+
+body {
+  animation: fadeIn 1s ease-in;
+}
+
+/*NAVIGATION BAR----------------------------------------------------------*/
+#nav-bar {
+  color: black;
+  text-decoration: none;
+  animation: fadeIn 1s ease-in;
+}
+.link-btn {
+  color: black;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .link-btn:hover {
@@ -42,7 +85,6 @@ html{
 @font-face {
   font-family: "Cinzel";
   src: url("./fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
-  font-display: swap;
 }
 
 .intText {
@@ -61,6 +103,16 @@ html{
   text-transform: none;  /* keeps normal casing */
   text-decoration: none;
 }
+#intTexth1{
+  font-family: "Cinzel", serif;
+  font-size: 40px;
+  font-weight: 100;
+  font-style: italic;
+  color: black;          /* or any color you want */
+  text-transform: none;  /* keeps normal casing */
+  text-decoration: none;
+}
+
 #intTextHeader:hover{
     color:black
 }
@@ -73,12 +125,35 @@ html{
   
 }
 
+
 /*The Conjuring Last Rites content----------------------------------------------------------*/
 
 #conjImage{
     width: 300px
 }
 
+@font-face{
+    font-family: "Cormorant Garamond", serif;
+    src: url("./fonts/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+#conjTextHeader{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.conjText{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+#conjTexth3{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 50;
+}
 /*Footer content----------------------------------------------------------*/
 
 #footer{
@@ -87,7 +162,9 @@ html{
 
 .intCastPic, .conjCastPic{
     width: 50px
-} 
+}
+
+
 
 /*Review Page content----------------------------------------------------------*/
 
@@ -114,6 +191,7 @@ html{
   font-size: 20px;
 }
 
+
 .indented{
     margin-left: 50px;
 }
@@ -122,3 +200,4 @@ p {
   margin-top: 0;
   margin-bottom: 0.5em; /* adjust as needed */
 }
+
