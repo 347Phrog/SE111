@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jonathan Joseph">
-    <meta name="description" content="week 4 flexbox and grid layout assignment">
-    <title>Movie Review</title>
-    <link rel= "stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jonathan Joseph">
+  <meta name="description" content="week 4 flexbox and grid layout assignment">
+  <title>Movie Review</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <div id ="container">
-        <h1 id ="header" class="border-unity"> <em id="intTextHeader">Intestellar</em> <span id="hPLUS">+</span> <em id="conjTextHeader">The Conjuring: Last Rites</em></h1>
-        <hr>
-        
-        <div id = "nav-bar" class="border-unity"> 
-            
-            <div class="btn-container">
+  <div id="container">
+    <h1 id="header" class="border-unity">
+      <em id="intTextHeader">Interstellar</em>
+      <span id="hPLUS">+</span>
+      <em id="conjTextHeader">The Conjuring: Last Rites</em>
+    </h1>
+    <hr>
 
-            <a href="index.html" class="link-btn">HOME</a>
-            <a href="./pages/cast.html" class="link-btn">CAST</a>
-            <a href="./pages/review.html" class="link-btn">REVIEW</a>
-            
-            </div>
-        </div>
-            <hr>
-        
-        <div id="content">
-            
-            <h2 class="intText">Interstellar</h2>
-            <p class="intText">
-                Interstellar is a 2014 epic science-fiction film directed by Christopher Nolan, 
-                who co-wrote the screenplay with his brother Jonathan Nolan. It features an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, 
-                and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through 
-                a wormhole near Saturn in search of a new home for mankind.
-            </p>
-            <img id ="intImage" src="./images/interstellar.jpg" alt="Movie poster of the movie Interstellar">
-            
-            <iframe 
-            width="300" 
-            height="200" 
-            src="https://www.youtube.com/embed/zSWdZVtXT7E" title="Interstellar - Trailer - Official Warner Bros. UK" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
-                <p class="intText"><b>Company Credits:</b>Syncopy, Lynda Obst Productions</p>
-                <p class="intText"><b>Running Time:</b> 169 min</p>
-                <p class="intText"><b>Release Date:</b> November 7th, 2014</p>
-                <p class="intText"><b>Rating:</b> PG-13</p>
-                <p class="intText"><b>Genre:</b> Adventure, Drama, Sci-Fi</p>
-            
-            <hr>
-            <h2> The Conjuring Last Rites </h2>
-            <p class="conjText">
-                The Conjuring: Last Rites is a 2025 American supernatural horror film directed by Michael Chaves and written by Ian Goldberg, Richard Naing, and David Leslie Johnson-McGoldrick. 
-                The film is the ninth in The Conjuring film series, and is based on the real-life investigations of the Smurl haunting case.[6] It stars Patrick Wilson and Vera Farmiga, 
-                who reprise their roles as paranormal investigators Ed and 
-                Lorraine Warren, along with Mia Tomlinson and Ben Hardy.
-            </p>
-            <img id = "conjImage" src="./images/conjPoster.jpg" alt="Movie Poster For The Conjuring: Last Rites">
-            
-            <iframe 
-            width="300"
-            height="200"
-            src="https://www.youtube.com/embed/bMgfsdYoEEo"
-            title = "The Conjuring: Last Rites | Official Trailer"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
-            <div id="conjInfo">
-                <p class="conjText"><b>Company Credits:</b>New Line Cinema, Atomic Monster, The Safran Company</p>
-                <p class="conjText"><b>Running Time:</b>135 min</p>
-                <p class="conjText"><b>Release Date:</b>September 5th, 2025</p>
-                <p class="conjText"><b>Raiting:</b> R</p>
-                <p class="conjText"><b>Genre:</b>Horror, Myster, Thriller</p>
-            </div>
-
-        </div>
-    
-        <hr>
-        <div id="footer">
-            <img src="./images/movieIndexValid.png" id="valid" alt="Image of this pages w3 validation">
-            <hr>
-            <a href="#header">Back to Top</a>
-        </div>
+    <div id="nav-bar" class="border-unity">
+      <div class="btn-container">
+        <a href="index.html" class="link-btn">HOME</a>
+        <a href="./pages/cast.html" class="link-btn">CAST</a>
+        <a href="./pages/review.html" class="link-btn">REVIEW</a>
+      </div>
     </div>
+    <hr>
+
+    <div id="content">
+      <!-- Interstellar Section -->
+      <h2 class="intText">Interstellar</h2>
+      <p class="intText">
+        <em>Interstellar</em> is a 2014 epic science-fiction film directed by Christopher Nolan,
+        who co-wrote the screenplay with his brother Jonathan Nolan. It features an ensemble cast led by
+        Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine.
+        Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows
+        a group of astronauts who travel through a wormhole near Saturn in search of a new home for mankind.
+      </p>
+
+      <img id="intImage" src="./images/interstellar.jpg" alt="Movie poster of the movie Interstellar">
+
+      <iframe
+        width="300"
+        height="200"
+        src="https://www.youtube.com/embed/zSWdZVtXT7E"
+        title="Interstellar - Trailer - Official Warner Bros. UK"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+
+      <p class="intText"><b>Company Credits:</b> Syncopy, Lynda Obst Productions</p>
+      <p class="intText"><b>Running Time:</b> 169 min</p>
+      <p class="intText"><b>Release Date:</b> November 7th, 2014</p>
+      <p class="intText"><b>Rating:</b> PG-13</p>
+      <p class="intText"><b>Genre:</b> Adventure, Drama, Sci-Fi</p>
+
+      <hr>
+
+      <!-- The Conjuring Section -->
+      <h2>The Conjuring: Last Rites</h2>
+      <p class="conjText">
+        <em>The Conjuring: Last Rites</em> is a 2025 American supernatural horror film directed by Michael Chaves
+        and written by Ian Goldberg, Richard Naing, and David Leslie Johnson-McGoldrick. The film is the ninth in
+        <em>The Conjuring</em> film series and is based on the real-life investigations of the Smurl haunting case.
+        It stars Patrick Wilson and Vera Farmiga, who reprise their roles as paranormal investigators Ed and Lorraine Warren,
+        along with Mia Tomlinson and Ben Hardy.
+      </p>
+
+      <img id="conjImage" src="./images/conjPoster.jpg" alt="Poster for The Conjuring: Last Rites">
+
+      <iframe
+        width="300"
+        height="200"
+        src="https://www.youtube.com/embed/bMgfsdYoEEo"
+        title="The Conjuring: Last Rites | Official Trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+
+      <div id="conjInfo">
+        <p class="conjText"><b>Company Credits:</b> New Line Cinema, Atomic Monster, The Safran Company</p>
+        <p class="conjText"><b>Running Time:</b> 135 min</p>
+        <p class="conjText"><b>Release Date:</b> September 5th, 2025</p>
+        <p class="conjText"><b>Rating:</b> R</p>
+        <p class="conjText"><b>Genre:</b> Horror, Mystery, Thriller</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="footer">
+      <img src="./images/movieIndexValid.png" id="valid" alt="HTML validation screenshot for this page">
+      <hr>
+      <a href="#header">Back to Top</a>
+    </div>
+  </div>
 </body>
 </html>

@@ -50,6 +50,11 @@ body {
 #conjImage,#intImage{
     display: block;
 }
+
+#valid{
+    width: 500px;
+}
+
 /*NAVIGATION BAR----------------------------------------------------------*/
 #nav-bar {
   color: black;
@@ -97,7 +102,7 @@ body {
   font-style: italic;
 }
 
-#intTextHeader{
+.intTextHeader{
   font-family: "Cinzel", serif;
   font-size: 32px;
   font-weight: 100;
@@ -116,9 +121,6 @@ body {
   text-decoration: none;
 }
 
-#intTextHeader:hover{
-    color:black
-}
 
 #intTexth2{
   font-family: "Cinzel", serif;
