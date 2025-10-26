@@ -1,41 +1,52 @@
-/*Global ----------------------------------------------------------*/
+/*GLOBAL----------------------------------------------------------*/
+
+html {
+  background-color: bisque;
+}
+
+body {
+  animation: fadeIn 1s ease-in;
+}
+
+.border-unity {
+  text-align: center;
+}
+
+#conjImage, #intImage {
+  display: block;
+}
+
+#valid {
+  width: 500px;
+}
+
+/* Fade In Animation */
 @keyframes fadeIn {
-  from 
-    { 
-    opacity: 0;  
-    transform: translateY(10px); 
-    }
-    to   
-    { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-
-.border-unity{
-    text-align: center;
-}
-
-html{
-    background-color: bisque;
-}
-
+/* Header Font Transition Animation */
 @keyframes intToconj {
   0% {
     font-family: "Cinzel", serif;
     opacity: 1;
   }
   49% {
-    opacity: 0; /* fade out before switch */
+    opacity: 0;
   }
   50% {
     font-family: "Cormorant Garamond", serif;
     opacity: 0;
   }
   100% {
-    opacity: 1; /* fade back in */
+    opacity: 1;
   }
 }
 
@@ -43,58 +54,44 @@ html{
   animation: intToconj 3s infinite;
 }
 
-body {
-  animation: fadeIn 1s ease-in;
-}
-
-#conjImage,#intImage{
-    display: block;
-}
-
-#valid{
-    width: 500px;
-}
 
 /*NAVIGATION BAR----------------------------------------------------------*/
+
 #nav-bar {
   color: black;
   text-decoration: none;
   animation: fadeIn 1s ease-in;
 }
+
 .link-btn {
   color: black;
   transition: color 0.3s, transform 0.3s;
 }
 
 .link-btn:hover {
-    animation-name: blackToblue;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+  animation: blackToblue 0.5s forwards;
 }
 
 @keyframes blackToblue {
-    from {
-        color: black;
-        font-size: 20px;
-    }
-    to {
-        color: blue;
-        font-size: 30px;
-    }
+  from {
+    color: black;
+    font-size: 20px;
+  }
+  to {
+    color: blue;
+    font-size: 30px;
+  }
 }
 
-/*Interstellar content----------------------------------------------------------*/
 
-#intImage{
-    width: 300px;
-    
-}
+/*INTERSTELLAR CONTENT----------------------------------------------------------*/
 
 @font-face {
   font-family: "Cinzel";
   src: url("./fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
 }
 
+/* Interstellar Text Styles */
 .intText {
   font-family: "Cinzel", serif;
   font-size: 15px;
@@ -102,76 +99,96 @@ body {
   font-style: italic;
 }
 
-.intTextHeader{
+.intTextHeader,
+#intTexth1 {
   font-family: "Cinzel", serif;
+  font-style: italic;
+  color: black;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.intTextHeader {
   font-size: 32px;
-  font-weight: 100;
-  font-style: italic;
-  color: black;          /* or any color you want */
-  text-transform: none;  /* keeps normal casing */
-  text-decoration: none;
 }
-#intTexth1{
-  font-family: "Cinzel", serif;
+
+#intTexth1 {
   font-size: 40px;
-  font-weight: 100;
-  font-style: italic;
-  color: black;          /* or any color you want */
-  text-transform: none;  /* keeps normal casing */
-  text-decoration: none;
 }
 
-
-#intTexth2{
+#intTexth2 {
   font-family: "Cinzel", serif;
   font-size: 26px;
   font-weight: 100;
   font-style: italic;
-  
+}
+
+/* Interstellar Image */
+#intImage {
+  width: 300px;
+}
+
+#intImage:hover {
+  animation: blackHole 2s infinite;
+}
+
+/* Black Hole Spin Animation */
+@keyframes blackHole {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Interstellar Cast Glow */
+.intCastPic {
+  width: 50px;
 }
 
 
-/*The Conjuring Last Rites content----------------------------------------------------------*/
+/*THE CONJURING LAST RITES CONTENT----------------------------------------------------------*/
 
-#conjImage{
-    width: 300px
+@font-face {
+  font-family: "Cormorant Garamond", serif;
+  src: url("./fonts/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: "Cormorant Garamond", serif;
-    src: url("./fonts/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+/* Conjuring Text Styles */
+#conjTextHeader {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font-weight: 500;
 }
 
-#conjTextHeader{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    font-weight: 500;
+.conjText {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  font-weight: 50;
 }
 
-.conjText{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 15px;
-    font-weight: 50;
+#conjTexth3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 50;
 }
 
-#conjTexth3{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
-    font-weight: 50;
-}
-/*Footer content----------------------------------------------------------*/
-
-#footer{
-    text-align: center;
+/* Conjuring Image + Flicker */
+#conjImage {
+  width: 300px;
+  animation: flicker 5s ease infinite;
 }
 
-.intCastPic, .conjCastPic{
-    width: 50px
+.conjCastPic {
+  width: 50px;
+  animation: flicker 5s ease infinite;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0; }
 }
 
 
-
-/*Review Page content----------------------------------------------------------*/
+/*REVIEW PAGE CONTENT----------------------------------------------------------*/
 
 @font-face {
   font-family: "SSF2Color";
@@ -185,10 +202,10 @@ body {
   font-display: swap;
 }
 
-
-.sfText{
+/* Game Font Styling */
+.sfText {
   font-family: "SSF2Color", sans-serif;
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .tekkenText {
@@ -196,13 +213,35 @@ body {
   font-size: 20px;
 }
 
+@keyframes letterExpand {
+  0% {
+    opacity: 0;
+    letter-spacing: -10px;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+}
 
-.indented{
-    margin-left: 50px;
+.sfText, .tekkenText {
+  animation: letterExpand 1.5s ease-out;
+  display: inline-block;
+}
+
+/* Review Layout */
+.indented {
+  margin-left: 50px;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 0.5em; /* adjust as needed */
+  margin-bottom: 0.5em;
 }
 
+
+/*FOOTER----------------------------------------------------------*/
+
+#footer {
+  text-align: center;
+}
