@@ -1,0 +1,15 @@
+table,tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold !important;
+
+}
+
+tr:nth-child(even){
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration:underline
+}
