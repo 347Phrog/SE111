@@ -9,13 +9,25 @@
 <body>
 
     <script>
-        operation = prompt("Would you like to add or multipy")
-        operation = operation.toLowerCase()
-        if("add" in operation)
-        {
-
+        let operation = prompt('"Would you like to add (1 for add) or multiply (2 for multiply)?"');
+        if (operation == 1) {
+            function add(){
+            let num1 = parseInt(prompt("What is your first number"))
+            let num2 = parseInt(prompt("What is your second number"))
+            return num1 + num2;
         }
 
+        console.log(add());
+        }
+        if (operation == 2){
+            function mult(){
+            let num1 = parseInt(prompt("What is your first number"))
+            let num2 = parseInt(prompt("What is your second number"))
+            return num1 * num2;
+            }
+        }
+
+        console.log(mult());
 
     </script>
     
