@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let hourly_rate = parseFloat(prompt("What is your hourly wage?"))
+        let hours = parseFloat(prompt("How many hours did you work?"))
+        let gross_pay = hours * hourly_rate
+        let tax = gross_pay * 0.2
+        let net = gross_pay - tax
+
+        console.log("Gross Pay: $" + gross_pay.toFixed(2));
+        console.log("Tax: $" + tax.toFixed(2));
+        console.log("Net Pay: $" + net.toFixed(2));
+    </script>
+    
+</body>
+</html>
