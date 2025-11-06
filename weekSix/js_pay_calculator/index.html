@@ -7,17 +7,27 @@
 </head>
 <body>
 
-    <script>
-        let hourly_rate = parseFloat(prompt("What is your hourly wage?"))
-        let hours = parseFloat(prompt("How many hours did you work?"))
-        let gross_pay = hours * hourly_rate
-        let tax = gross_pay * 0.2
-        let net = gross_pay - tax
+  <p id="gross_pay"></p>
+  <p id="tax"></p>
+  <p id="net"></p>
 
-        console.log("Gross Pay: $" + gross_pay.toFixed(2));
-        console.log("Tax: $" + tax.toFixed(2));
-        console.log("Net Pay: $" + net.toFixed(2));
-    </script>
+  <script>
+    var hourly_rate = parseFloat(prompt("What is your hourly wage?"));
+    var hours = parseFloat(prompt("How many hours did you work?"));
+    var gross_pay = hours * hourly_rate;
+    var tax = gross_pay * 0.2;
+    var net = gross_pay - tax;
+
+    document.getElementById("gross_pay").textContent = "Gross Pay: $" + gross_pay.toFixed(2);
+    document.getElementById("tax").textContent = "Tax: $" + tax.toFixed(2);
+    document.getElementById("net").textContent = "Net Pay: $" + net.toFixed(2);
+
+    console.log("Gross Pay: $" + gross_pay.toFixed(2));
+    console.log("Tax: $" + tax.toFixed(2));
+    console.log("Net Pay: $" + net.toFixed(2));
+  </script>
+
+    
     
 </body>
 </html>
