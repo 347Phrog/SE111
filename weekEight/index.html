@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Jonatha Joseph">
+	<meta name="author" content="Jonathan Joseph">
     <title>Week 8 | Homework Assignment</title>
 </head>
 <body>
@@ -38,12 +38,18 @@
 	
 		//Store the elements (tags) in variables
 		
+		let firstInput = document.getElementById("first");
+		let lastInput = document.getElementById("last");
+		let button = document.getElementById("button");
+		let outputDiv = document.getElementById("output");
 
 		//Make an array to store the people
+
+		let people = [];
 		
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		
+		button.addEventListener("click", calcAndDisplay);
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -68,6 +74,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
+				first: firstInput.value,
+				last: lastInput.value
 
 
 
@@ -77,7 +85,7 @@
 
 
 			//Add the person object into the people array by using the .push() array method.
-			
+			people.push(person);
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -94,18 +102,19 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			
+			console.log(people)
 
 			//create a variable called 'output' that has an empty string value stored to 
-			
+			let output = "";
 
 			//Loop through the objects in the people array
-			for()
+			for(let i = 0; i < people.length; i++)
             {
 
 				//Loop through each property in the object
 				for(key in people[i])
                 {
+					output += key.toUpperCase() + ": " + people[i][key] + "<br>";
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
@@ -114,16 +123,14 @@
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				output += "<hr>"
 
 
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
-				
-
-
+				outputDiv.innerHTML = output;
 
 		}
 	
